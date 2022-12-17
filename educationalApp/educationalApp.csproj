@@ -6,4 +6,98 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="audio\A.wav" />
+    <None Remove="digits\eight.jpg" />
+    <None Remove="digits\five.jpg" />
+    <None Remove="digits\four.jpg" />
+    <None Remove="digits\nine.jpg" />
+    <None Remove="digits\one.jpg" />
+    <None Remove="digits\seven.jpg" />
+    <None Remove="digits\six.jpg" />
+    <None Remove="digits\ten.jpg" />
+    <None Remove="digits\three.jpg" />
+    <None Remove="digits\two.jpg" />
+    <None Remove="letters\A.jpg" />
+    <None Remove="letters\B.jpg" />
+    <None Remove="letters\CH.jpg" />
+    <None Remove="letters\D.jpg" />
+    <None Remove="letters\E.jpg" />
+    <None Remove="letters\EE.jpg" />
+    <None Remove="letters\EO.jpg" />
+    <None Remove="letters\F.jpg" />
+    <None Remove="letters\G.jpg" />
+    <None Remove="letters\H.jpg" />
+    <None Remove="letters\I.jpg" />
+    <None Remove="letters\J.jpg" />
+    <None Remove="letters\K.jpg" />
+    <None Remove="letters\L.jpg" />
+    <None Remove="letters\M.jpg" />
+    <None Remove="letters\MG.jpg" />
+    <None Remove="letters\N.jpg" />
+    <None Remove="letters\O.jpg" />
+    <None Remove="letters\P.jpg" />
+    <None Remove="letters\R.jpg" />
+    <None Remove="letters\S.jpg" />
+    <None Remove="letters\SH.jpg" />
+    <None Remove="letters\SHCH.jpg" />
+    <None Remove="letters\T.jpg" />
+    <None Remove="letters\TS.jpg" />
+    <None Remove="letters\TV.jpg" />
+    <None Remove="letters\U.jpg" />
+    <None Remove="letters\V.jpg" />
+    <None Remove="letters\YA.jpg" />
+    <None Remove="letters\YO.jpg" />
+    <None Remove="letters\YU.jpg" />
+    <None Remove="letters\YY.jpg" />
+    <None Remove="letters\Z.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="audio\A.wav" />
+    <Resource Include="digits\eight.jpg" />
+    <Resource Include="digits\five.jpg" />
+    <Resource Include="digits\four.jpg" />
+    <Resource Include="digits\nine.jpg" />
+    <Resource Include="digits\one.jpg" />
+    <Resource Include="digits\seven.jpg" />
+    <Resource Include="digits\six.jpg" />
+    <Resource Include="digits\ten.jpg" />
+    <Resource Include="digits\three.jpg" />
+    <Resource Include="digits\two.jpg" />
+    <Resource Include="letters\A.jpg" />
+    <Resource Include="letters\B.jpg" />
+    <Resource Include="letters\CH.jpg" />
+    <Resource Include="letters\D.jpg" />
+    <Resource Include="letters\E.jpg" />
+    <Resource Include="letters\EE.jpg" />
+    <Resource Include="letters\EO.jpg" />
+    <Resource Include="letters\F.jpg" />
+    <Resource Include="letters\G.jpg" />
+    <Resource Include="letters\H.jpg" />
+    <Resource Include="letters\I.jpg" />
+    <Resource Include="letters\J.jpg" />
+    <Resource Include="letters\K.jpg" />
+    <Resource Include="letters\L.jpg" />
+    <Resource Include="letters\M.jpg" />
+    <Resource Include="letters\MG.jpg" />
+    <Resource Include="letters\N.jpg" />
+    <Resource Include="letters\O.jpg" />
+    <Resource Include="letters\P.jpg" />
+    <Resource Include="letters\R.jpg" />
+    <Resource Include="letters\S.jpg" />
+    <Resource Include="letters\SH.jpg" />
+    <Resource Include="letters\SHCH.jpg" />
+    <Resource Include="letters\T.jpg" />
+    <Resource Include="letters\TS.jpg" />
+    <Resource Include="letters\TV.jpg" />
+    <Resource Include="letters\U.jpg" />
+    <Resource Include="letters\V.jpg" />
+    <Resource Include="letters\YA.jpg" />
+    <Resource Include="letters\YO.jpg" />
+    <Resource Include="letters\YU.jpg" />
+    <Resource Include="letters\YY.jpg" />
+    <Resource Include="letters\Z.jpg" />
+  </ItemGroup>
+
 </Project>
