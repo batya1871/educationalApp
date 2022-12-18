@@ -4,10 +4,57 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>A.ico</ApplicationIcon>
+    <Description>Обучающее приложение для детей до 6-ти лет</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="A.ico" />
     <None Remove="audio\A.wav" />
+    <None Remove="audio\B.wav" />
+    <None Remove="audio\CH.wav" />
+    <None Remove="audio\D.wav" />
+    <None Remove="audio\E.wav" />
+    <None Remove="audio\EE.wav" />
+    <None Remove="audio\EO.wav" />
+    <None Remove="audio\F.wav" />
+    <None Remove="audio\G.wav" />
+    <None Remove="audio\H.wav" />
+    <None Remove="audio\I.wav" />
+    <None Remove="audio\J.wav" />
+    <None Remove="audio\K.wav" />
+    <None Remove="audio\L.wav" />
+    <None Remove="audio\M.wav" />
+    <None Remove="audio\MG.wav" />
+    <None Remove="audio\N.wav" />
+    <None Remove="audio\O.wav" />
+    <None Remove="audio\P.wav" />
+    <None Remove="audio\R.wav" />
+    <None Remove="audio\S.wav" />
+    <None Remove="audio\SH.wav" />
+    <None Remove="audio\SHCH.wav" />
+    <None Remove="audio\T.wav" />
+    <None Remove="audio\TS.wav" />
+    <None Remove="audio\TV.wav" />
+    <None Remove="audio\U.wav" />
+    <None Remove="audio\V.wav" />
+    <None Remove="audio\YA.wav" />
+    <None Remove="audio\YO.wav" />
+    <None Remove="audio\YU.wav" />
+    <None Remove="audio\YY.wav" />
+    <None Remove="audio\Z.wav" />
+    <None Remove="digitsAudio\eight.wav" />
+    <None Remove="digitsAudio\five.wav" />
+    <None Remove="digitsAudio\four.wav" />
+    <None Remove="digitsAudio\nine.wav" />
+    <None Remove="digitsAudio\one.wav" />
+    <None Remove="digitsAudio\seven.wav" />
+    <None Remove="digitsAudio\six.wav" />
+    <None Remove="digitsAudio\ten.wav" />
+    <None Remove="digitsAudio\three.wav" />
+    <None Remove="digitsAudio\two.wav" />
     <None Remove="digits\eight.jpg" />
     <None Remove="digits\five.jpg" />
     <None Remove="digits\four.jpg" />
@@ -54,7 +101,138 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="audio\A.wav" />
+    <Resource Include="A.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\A.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\B.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\CH.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\D.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\E.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\EE.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\EO.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\F.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\G.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\H.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\I.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\J.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\K.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\L.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\M.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\MG.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\N.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\O.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\P.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\R.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\S.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\SH.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\SHCH.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\T.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\TS.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\TV.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\U.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\V.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\YA.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\YO.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\YU.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\YY.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="audio\Z.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\eight.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\five.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\four.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\nine.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\one.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\seven.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\six.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\ten.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\three.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="digitsAudio\two.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="digits\eight.jpg" />
     <Resource Include="digits\five.jpg" />
     <Resource Include="digits\four.jpg" />
@@ -98,6 +276,21 @@
     <Resource Include="letters\YU.jpg" />
     <Resource Include="letters\YY.jpg" />
     <Resource Include="letters\Z.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

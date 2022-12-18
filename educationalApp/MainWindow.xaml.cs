@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Media;
 namespace educationalApp
 {
@@ -23,14 +14,16 @@ namespace educationalApp
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            
             ((Image)sender).Opacity = 0.3;
             string name = ((Image)sender).Name;
-            string path = $"{Environment.CurrentDirectory}\\audio\\{name}.wav";
-            SoundPlayer soundPlayer = new SoundPlayer(path);
+            var sound = Properties.Resources.ResourceManager.GetObject($"{name}");
+            SoundPlayer soundPlayer = new SoundPlayer((System.IO.Stream)sound);
             soundPlayer.Load();
             soundPlayer.Play();
         }
@@ -52,8 +45,8 @@ namespace educationalApp
         {
             ((Image)sender).Opacity = 0.3;
             string name = ((Image)sender).Name;
-            string path = $"{Environment.CurrentDirectory}\\digitsAudio\\{name}.wav";
-            SoundPlayer soundPlayer = new SoundPlayer(path);
+            var sound = Properties.Resources.ResourceManager.GetObject($"{name}");
+            SoundPlayer soundPlayer = new SoundPlayer((System.IO.Stream)sound);
             soundPlayer.Load();
             soundPlayer.Play();
         }
