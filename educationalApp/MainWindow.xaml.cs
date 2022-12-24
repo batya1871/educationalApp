@@ -58,6 +58,7 @@ namespace educationalApp
         {
             Letters.Visibility = Visibility.Hidden;
             Digits.Visibility = Visibility.Visible;
+            Tutorial.Visibility = Visibility.Hidden;
 
         }
 
@@ -76,7 +77,7 @@ namespace educationalApp
         {
             Letters.Visibility = Visibility.Visible;
             Digits.Visibility = Visibility.Hidden;
-
+            Tutorial.Visibility = Visibility.Hidden;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

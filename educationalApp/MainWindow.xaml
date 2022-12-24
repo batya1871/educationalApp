@@ -12,12 +12,20 @@
         AllowsTransparency="True"
         WindowStyle="None"
         ResizeMode="CanResizeWithGrip"
-        MinHeight="540"
-        MinWidth="1100"
+        MinHeight="700"
+        MinWidth="1400"
         Closing ="Window_Closing" 
-        Loaded="Window_Loaded"
-        
+        Loaded="Window_Loaded" 
         >
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Offset="0" Color="Green" />
+                <GradientStop Offset="0.6" Color="#FF7DF048" />
+                <GradientStop Offset="1" Color="Green" />
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+    </Window.Background>
 
     <Border Name="Border" >
         <Grid x:Name="MainGrid">
@@ -25,7 +33,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition></RowDefinition>
-                    
+
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="110"></ColumnDefinition>
@@ -132,24 +140,33 @@
                        >
                     <StackPanel Visibility="Visible" Orientation="Vertical"   x:Name="OtherTablePanel">
                         <StackPanel Orientation="Horizontal" Height="40" Margin="0,5,0,0">
-                            <Label Content="Русский алфавит"  Style="{StaticResource ButtonHead}"
+                            <Label  x:Name="LettersBtn" Content="Русский алфавит"  Style="{StaticResource ButtonHead}"
                            MouseEnter="Header_Mouse_Enter" MouseLeave="Header_Mouse_Leave"  MouseDown="LettersDown"
                                     />
-                            <Label x:Name="ListEventsBtn"  Content="Цифры" Style="{StaticResource ButtonHead}" 
+                            <Label x:Name="DigitsBtn"  Content="Цифры" Style="{StaticResource ButtonHead}" 
                                    MouseEnter="Header_Mouse_Enter"
                            MouseLeave="Header_Mouse_Leave" MouseDown="DigitsDown"
                            
                            />
-
-
-
 
                         </StackPanel>
                     </StackPanel>
                 </DockPanel>
                 <!--#endregion-->
                 <!--#region main_field-->
-                <Grid Name="Letters" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,0,20,0" Visibility="Visible" VerticalAlignment="Top" HorizontalAlignment="Center"> 
+                <Border Name="Tutorial" Visibility="Visible"  Padding="5,0,5,0" BorderThickness="2" BorderBrush="#FF060505"  VerticalAlignment="Center" HorizontalAlignment="Center" CornerRadius="30" Height="400" Width="1000" Grid.Row="1"  Background="#FF3EAE3E" Grid.ColumnSpan="3"  >
+                    <StackPanel    VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
+                        <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Style="{StaticResource TitleText}" Text="Обучающее приложение 'Символы'" />
+                        <TextBlock FontWeight="Bold" Style="{StaticResource TitleText}" Text="Инструкция:" />
+                        <TextBlock Style="{StaticResource TitleText}" Text="1) В левом верхнем меню экрана выберите, какие символы будет изучать ребенок" />
+                        <TextBlock Style="{StaticResource TitleText}" Text="2) Нажмите на выбранный вариант" />
+                        <TextBlock Style="{StaticResource TitleText}" Text="3) Настройте звук так, чтобы названия символов были хорошо слышны" />
+                        <TextBlock Style="{StaticResource TitleText}" Text="4) Попросите ребенка сесть перед вашим устройством и понажимать на символы" />
+                        <TextBlock Style="{StaticResource TitleText}" Text="При нажатии на символы будет произноситься их звуковое обозначение, что ускорит их изучение ребенком" />
+                    </StackPanel>
+
+                </Border>
+                <Grid Name="Letters" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,0,20,0" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Center">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" ></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -158,16 +175,16 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition MaxWidth="200" ></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200" ></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
-                        <ColumnDefinition MaxWidth="200"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto" ></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto" ></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Image Grid.Row="0" Grid.Column="0" Style="{StaticResource symbol}" Name="A" Source="letters/A.jpg" MouseDown="Image_MouseDown" MouseEnter="symbol_MouseEnter" MouseLeave="symbol_MouseLeave" MouseLeftButtonUp="symbol_MouseLeftButtonUp" />
                     <Image Grid.Row="0" Grid.Column="1" Style="{StaticResource symbol}" Name="B" Source="letters/B.jpg" MouseDown="Image_MouseDown" MouseEnter="symbol_MouseEnter" MouseLeave="symbol_MouseLeave" MouseLeftButtonUp="symbol_MouseLeftButtonUp" />
